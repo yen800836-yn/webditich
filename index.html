@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di Tích Lịch Sử Việt Nam - Trang Chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html"><i class="bi bi-bank2 me-2"></i>DI TÍCH VIỆT NAM</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="danhsach.html">Danh Sách Di Tích</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold mb-3">Khám Phá Di Tích Lịch Sử Việt Nam</h1>
+            <p class="lead mb-4">.</p>
+            <a href="danhsach.html" class="btn btn-chinh btn-lg px-5 shadow">Xem Toàn Bộ Di Tích</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-11">
+                <div class="search-box position-relative"> 
+                    <form class="row g-3" id="formTimKiem">
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-search text-muted"></i></span>
+                                <input type="text" id="oNhapLieu" class="form-control border-start-0" placeholder="Nhập tên tỉnh hoặc tên di tích (Ví dụ: Hà Nội, Huế...)" autocomplete="off">
+                            </div>
+                            
+                            <div id="bangGoiY" class="list-group position-absolute w-100 shadow-sm d-none" style="z-index: 1000; max-height: 250px; overflow-y: auto; left: 0; right: 0; padding: 0 12px; margin-top: 5px;">
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" id="nutTimKiem" class="btn btn-chinh w-100 py-2 fw-bold">TÌM KIẾM</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <section class="container my-5 pt-4" id="danh-sach">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold" style="color: var(--mau-chinh);">DI TÍCH LỊCH SỬ TIÊU BIỂU ĐẶT BIỆT</h2>
+    </div>
+
+    <div class="row g-4">
+
+        <!--thêm các di tích lịch sử nổi bật vào đây-->
+
+        <!--Miền Bắc-->
+        <!--1-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="thanglong.jpg" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Hà Nội</span>
+                    <h5 class="card-title fw-bold">Hoàng thành Thăng Long</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet1-thanglong.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <!--2-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="den-hung-phu-tho-2.jpg" class="card-img-top" alt="Văn Miếu">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Phú Thọ</span>
+                    <h5 class="card-title fw-bold">Đền Hùng</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet4-denhung.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <!--3-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="dienbienphu.jpg" class="card-img-top" alt="Văn Miếu">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Điện Biên</span>
+                    <h5 class="card-title fw-bold">Quần thể di tích Chiến trường Điện Biên Phủ</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet5-dienbienphu.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Miền Trung-->
+        <!--1-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="codohoalu.jpg" class="card-img-top" alt="Văn Miếu">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Ninh Bình</span>
+                    <h5 class="card-title fw-bold">Cố Đô Hoa Lư</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet6-codohoalu.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <!--2-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="hoian.jpg" class="card-img-top" alt="Văn Miếu">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Quảng Nam</span>
+                    <h5 class="card-title fw-bold">Phố Cổ Hội An</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet3-hoian.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <!--3-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="den-ba-trieu-.webp" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Thanh Hóa</span>
+                    <h5 class="card-title fw-bold">Khu di tích Bà Triệu</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet6-batrieu.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!--Miền Nam-->
+        <!--1-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="kham-pha-dinh-doc-lap4.jpg" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Thành phố Hồ Chí Minh</span>
+                    <h5 class="card-title fw-bold">Dinh Độc Lập</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet1-dinhcolap.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <!--2-->
+        <div class="col-lg-4 col-md-6">
+                <div class="card card-di-tich h-100 shadow-sm">
+                    <img src="Dia-dao-Cu-Chi12-1599706842.jpg" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge badge-location mb-2 p-2 align-self-start">Thành phố Hồ Chí Minh</span>
+                        <h5 class="card-title fw-bold">Địa đạo Củ Chi</h5>
+                        <p class="text-muted flex-grow-1">.</p>
+                        <a href="chitiet2-cuchi.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                    </div>
+                </div>
+        </div>
+
+        <!--3-->
+        <div class="col-lg-4 col-md-6">
+            <div class="card card-di-tich h-100 shadow-sm">
+                <img src="toan-canh-kien-truc-nha-tu-con-dao-condao-express.webp" class="card-img-top" alt="Văn Miếu">
+                <div class="card-body d-flex flex-column">
+                    <span class="badge badge-location mb-2 p-2 align-self-start">Bà Rịa - Vũng Tàu</span>
+                    <h5 class="card-title fw-bold">Nhà tù Côn Đảo</h5>
+                    <p class="text-muted flex-grow-1">.</p>
+                    <a href="chitiet3-condao.html" class="btn btn-phu w-100 mt-3">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <h5 class="fw-bold mb-2">HỆ THỐNG WEBSITE GIỚI THIỆU DI TÍCH LỊCH SỬ VIỆT NAM</h5>
+            <p class="small text-muted mb-0">©2026 Web Di Tích Lịch Sử.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const duLieuDiTich = [
+
+            { ten: "Hoàng thành Thăng Long", tinh: "Hà Nội", link: "chitiet1-thanglong.html" },
+            { ten: "Khu lưu niệm Chủ tịch Hồ Chí Minh - Phủ Chủ tịch", tinh: "Hà Nội", link: "chitiet2-phuchutich.html" },
+            { ten: "Văn Miếu - Quốc Tử Giám", tinh: "Hà Nội", link: "chitiet3-vanmieu.html" },
+            { ten: "Đền Hùng", tinh: "Phú Thọ", link: "chitiet4-denhung.html" },
+            { ten: "Quần thể di tích Chiến trường Điện Biên Phủ", tinh: "Điện Biên", link: "chitiet5-dienbienphu.html" },
+            { ten: "Cố đô Hoa Lư", tinh: "Ninh Bình", link: "chitiet6-codohoalu.html" },
+            { ten: "Côn Sơn - Kiếp Bạc", tinh: "Hải Dương", link: "chiteit7-consonkiepbac.html" },
+            { ten: "Di tích Pác Bó", tinh: "Cao Bằng", link: "chitiet8-pacbo.html" },
+            { ten: "Khu di tích Tân Trào", tinh: "Tuyên Quang", link: "chitiet9-tantrao.html" },
+            { ten: "Khởi nghĩa Yên Thế", tinh: "Bắc Giang", link: "chitiet10-yenthe.html" },
+            { ten: "Đền Trần - Chùa Phổ Minh", tinh: "Nam Định", link: "chitiet11-dentran.html" },
+
+            { ten: "Quần thể di tích Cố đô Huế", tinh: "Thừa Thiên Huế", link: "chitiet1-hue.html" },
+            { ten: "Thánh địa Mỹ Sơn", tinh: "Quảng Nam", link: "chitiet2-myson.html" },
+            { ten: "Phố cổ Hội An", tinh: "Quảng Nam", link: "chitiet3-hoian.html" },
+            { ten: "Thành Nhà Hồ", tinh: "Thanh Hóa", link: "chitiet4-nhaho.html" },
+            { ten: "Lam Kinh", tinh: "Thanh Hóa", link: "chitiet5-lamkinh.html" },
+            { ten: "Khu di tích Bà Triệu", tinh: "Thanh Hóa", link: "chitiet6-batrieu.html" },
+            { ten: "Khu lưu niệm Nguyễn Du", tinh: "Hà Tĩnh", link: "chitiet7-nguyendu.html" },
+            { ten: "Hiền Lương - Bến Hải", tinh: "Quảng Trị", link: "chitiet8-hienluongbenhai.html" },
+            { ten: "Địa đạo Vịnh Mốc", tinh: "Quảng Trị", link: "chitiet9-diadaovinhmoc.html" },
+    
+            { ten: "Dinh Độc Lập", tinh: "Thành phố Hồ Chí Minh", link: "chitiet1-dinhcolap.html" },
+            { ten: "Địa đạo Củ Chi", tinh: "Thành phố Hồ Chí Minh", link: "chitiet2-cuchi.html" },
+            { ten: "Nhà tù Côn Đảo", tinh: "Bà Rịa - Vũng Tàu", link: "chitiet3-condao.html" },
+            { ten: "Căn cứ Trung ương Cục miền Nam", tinh: "Tây Ninh", link: "chitiet4-cancutrunguong.html" },
+            { ten: "Nhà tù Phú Quốc", tinh: "Kiên Giang", link: "chitiet5-nhatuphuquoc.html" },
+            { ten: "Chiến thắng Rạch Gầm - Xoài Mút", tinh: "Tiền Giang", link: "chitiet6-rachgamxoaimut.html" },
+            { ten: "Chiến thắng Chương Thiện", tinh: "Hậu Giang", link: "chitiet7-chuongthien.html" },
+            { ten: "Khu mộ Nguyễn Đình Chiểu", tinh: "Bến Tre", link: "chitiet8-dinhchieu.html" },
+            { ten: "Đồng Khởi Bến Tre", tinh: "Bến Tre", link: "chitiet9-dongkhoibentre.html" },
+            { ten: "Khu lưu niệm Chủ tịch Tôn Đức Thắng", tinh: "An Giang", link: "chitiet10-tonducthang.html" },
+
+        ];
+
+        const oNhapLieu = document.getElementById('oNhapLieu');
+        const bangGoiY = document.getElementById('bangGoiY');
+
+        oNhapLieu.addEventListener('input', function() {
+            let tuKhoa = this.value.toLowerCase().trim();
+            bangGoiY.innerHTML = '';
+
+            if (tuKhoa === '') {
+                bangGoiY.classList.add('d-none');
+                return;
+            }
+
+            let ketQuaLoc = duLieuDiTich.filter(item => 
+                item.tinh.toLowerCase().includes(tuKhoa) || 
+                item.ten.toLowerCase().includes(tuKhoa)
+            );
+
+            if (ketQuaLoc.length > 0) {
+                bangGoiY.classList.remove('d-none');
+                ketQuaLoc.forEach(item => {
+                    let nutGoiY = document.createElement('button');
+                    nutGoiY.type = 'button';
+                    nutGoiY.className = 'list-group-item list-group-item-action text-start d-flex justify-content-between align-items-center';
+                    nutGoiY.innerHTML = `
+                        <span><i class="bi bi-bank me-2 text-success"></i>${item.ten}</span>
+                        <span class="badge bg-secondary p-2 small"><i class="bi bi-geo-alt me-1"></i>${item.tinh}</span>
+                    `;
+                    
+                    nutGoiY.addEventListener('click', function() {
+                        oNhapLieu.value = item.ten;
+                        bangGoiY.classList.add('d-none');
+                        window.location.href = item.link;
+                    });
+                    bangGoiY.appendChild(nutGoiY);
+                });
+            } else {
+                bangGoiY.classList.add('d-none');
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!oNhapLieu.contains(e.target) && !bangGoiY.contains(e.target)) {
+                bangGoiY.classList.add('d-none');
+            }
+        });
+
+        document.getElementById('formTimKiem').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            let tuKhoa = oNhapLieu.value.toLowerCase().trim();
+            let timChinhXac = duLieuDiTich.find(item => item.ten.toLowerCase() === tuKhoa);
+            
+            if (timChinhXac) {
+                window.location.href = timChinhXac.link;
+            } else if (tuKhoa === "") {
+                alert("Vui lòng nhập từ khóa tìm kiếm!");
+            } else {
+                window.location.href = 'danhsach.html';
+            }
+        });
+    </script>
+</body>
+</html>

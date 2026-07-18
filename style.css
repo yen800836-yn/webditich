@@ -1,0 +1,123 @@
+:root {
+    --mau-chinh: #1b4d3e; /* Xanh hoàng thành */
+    --mau-phu: #cda250;   /* Vàng cung đình */
+    --mau-nen: #fcfbf7;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--mau-nen);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid var(--mau-phu);
+}
+.navbar-brand {
+    color: var(--mau-chinh) !important;
+}
+.nav-link {
+    color: #444 !important;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: all 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--mau-chinh) !important;
+    border-bottom: 2px solid var(--mau-phu);
+}
+
+/* Hero & Search */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1599708153386-62e257ef8872?q=80&w=1200') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 90px 0;
+}
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: -40px;
+    position: relative;
+    z-index: 10;
+}
+
+/* card */
+.card-di-tich {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+.card-di-tich:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+}
+.card-di-tich img {
+    height: 220px;
+    object-fit: cover;
+}
+.card-di-tich .card-title {
+    color: var(--mau-chinh);
+}
+.badge-location {
+    background-color: #e8f5e9;
+    color: var(--mau-chinh);
+    font-weight: 500;
+}
+
+/* Buttons */
+.btn-chinh {
+    background-color: var(--mau-chinh);
+    color: white;
+    border: none;
+}
+.btn-chinh:hover {
+    background-color: #123329;
+    color: white;
+}
+.btn-phu {
+    border: 2px solid var(--mau-chinh);
+    color: var(--mau-chinh);
+    background: transparent;
+    font-weight: 500;
+}
+.btn-phu:hover {
+    background-color: var(--mau-chinh);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #f6edf3;
+    color: #bbbbbb;
+}
+footer h5 {
+    color: var(--mau-phu);
+}
+/* css bảng gợi ý tìm kiếm*/
+#bangGoiY {
+    background-color: #ffffff !important;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+}
+
+#bangGoiY .list-group-item {
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #333333;
+}
+
+#bangGoiY .list-group-item:hover {
+    background-color: #f8f9fa !important;
+    color: var(--mau-chinh) !important;
+}

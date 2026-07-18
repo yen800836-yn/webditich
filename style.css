@@ -89,7 +89,7 @@ body {
     font-weight: 500;
 }
 .btn-phu:hover {
-    background-color: var(--mau-chinh);
+    background-color: var(--mau-phu);
     color: white;
 }
 
